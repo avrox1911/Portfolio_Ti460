@@ -1,0 +1,14 @@
+<div class="sidebar">
+  <div class="profile">
+    <h5>Profile</h5>
+    <img src="images/profile.jpeg" alt="jpeg" />
+    <label for="profileName">Tiago</label>
+  </div>
+
+  <h5>Post list</h5>
+  <ul>
+    <% posts.sort((a, b) => new Date(b.date) - new Date(a.date)).forEach(post => { %>
+    <li><a href="/?id=<%= post.id %>"><%= post.title %></a></li>
+    <% }); %>
+  </ul>
+</div>

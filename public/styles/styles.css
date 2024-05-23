@@ -1,0 +1,106 @@
+/* Style for the container */
+.container {
+  display: flex; /* Use flexbox for layout */
+  flex-direction: row;
+  justify-content: center; /* Horizontally center content */
+  max-width: 980px; /* Set maximum width */
+  height: 100%;
+  width: 100%;
+  margin-top: 100px;
+}
+
+/* Style for the sidebar */
+.sidebar {
+  flex: 1; /* Take up remaining space */
+  margin-right: 10px; /* Add some space between sidebar and content */
+ 
+  
+}
+
+/* Style for the post container */
+.postContainer {
+  flex: 4; /* Take up more space */
+  background-color: #333;
+  color: floralwhite;
+  padding: 5px 20px;
+  height: 100%;
+}
+
+.postForm {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0 25px 25px 25px;
+  background-color: #505050;
+  color: #fff;
+  font-size: 16px;
+  
+}
+
+.postForm textarea  {
+  width: 100%;
+  padding: 5px 5px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #505050;
+  color: #fff;
+  font-size: 16px;
+  resize: none;
+}
+
+.titleInput {
+  padding: 5px 5px;
+  margin: 8px 0;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: #505050;
+  color: #fff;
+}
+
+
+/* Style for the footer */
+.footer {
+  display: flex;
+  bottom: 0;
+  position: fixed;
+  background-color: #333; /* Dark background color */
+  color: #fff; /* White text color */
+  text-align: center; /* Center align text */
+  margin-top: 5px; /* Add some space on top */
+  height: 80px; /* Set height */
+  width: 100%;
+}
+
+/* Style for header */
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: fixed;
+  background-color: #333; /* Dark background color */
+  color: #fff; /* White text color */
+  padding: 10px 20px; /* Padding around text */
+  text-align: center; /* Center align text */
+  top: 0;
+  width: 100%;
+}
+
+/* Style for header links on hover */
+header a:hover {
+  text-decoration: underline; /* Add underline on hover */
+}
+
+.profileName {
+  font-size: 1.5rem;
+}
+
+.profile img {
+  
+  height: 50px;
+  border-radius: 50%;
+  border: #fff 2px solid;
+  background-color: aqua;
+}

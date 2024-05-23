@@ -1,0 +1,12 @@
+<div class="postContainer" style="overflow-y: scroll; max-height: 100%;">
+  <h2>Posts</h2>
+  <% posts.sort((a, b) => new Date(b.date) - new Date(a.date)).forEach(post => { %>
+    <div class="post">
+      <hr> 
+      <h4><%= post.title %></h4>
+      <p><%= post.message %></p>
+      <span style="float: right; font-size: smaller; color: gray;"><%= new Date(post.date) %></span>
+      <hr> 
+    </div>
+  <% }); %> 
+</div>
